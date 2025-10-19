@@ -1,7 +1,7 @@
 import pdfplumber
 
 # caminho onde se encontra o pdf
-caminho = "./hugging_face/test.pdf"
+caminho = "./read-of-pdf/test.pdf"
 
 # abre o pdf
 with pdfplumber.open(caminho) as pdf:
@@ -11,3 +11,4 @@ with pdfplumber.open(caminho) as pdf:
         texto += pag.extract_text() or ""
 
 print(texto)
+
